@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "T-Track",
+    "description": "Find out how much time you actually spent.",
+    "slug": "t-track",
+    "privacy": "unlisted",
+    "sdkVersion": "26.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "me.raymundovr.ttrack"
+    },
+    "android": {
+      "package": "me.raymundovr.ttrack"
+    }
+  }
+}
