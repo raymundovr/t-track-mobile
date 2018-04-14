@@ -1,6 +1,7 @@
 export default class Project {
     static createProject = (projectName) => {
-        let id = 'project-' + Math.floor(Math.random() * 100000);
+        let createdOn = new Date();
+        let id = 'project-' + createdOn.valueOf();
         return {
             id: id,
             name: projectName,

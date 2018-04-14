@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Content, Header, Body, Footer, Title, FooterTab } from 'native-base';
 import ProjectsList from '../components/ProjectsList.js';
 import CreateProjectButton from '../components/CreateProjectButton.js';
+import Navigation from '../components/Navigation.js';
 import Project from '../entity/Project.js';
 import ProjectStorage from '../model/ProjectStorage.js';
 
@@ -47,7 +48,8 @@ export default class Projects extends React.Component {
                     <FooterTab>
                         <CreateProjectButton navigate={navigate}/>
                     </FooterTab>
-                </Footer>                    
+                </Footer>                   
+                                 
             </Container>
         );
     }

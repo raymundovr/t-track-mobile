@@ -4,6 +4,8 @@ import { View } from 'react-native';
 import Projects from './src/screens/Projects.js';
 import ProjectDetails from './src/screens/ProjectDetails.js';
 import CreateProject from './src/screens/CreateProject.js';
+import Statistics from './src/screens/Statistics.js';
+import DeleteProject from './src/screens/DeleteProject.js';
 
 export default class App extends React.Component {
   state = {
@@ -24,7 +26,9 @@ export default class App extends React.Component {
       {
       Projects: {screen: Projects},
       ProjectDetails: {screen: ProjectDetails},
-      CreateProject: {screen: CreateProject}
+      CreateProject: {screen: CreateProject},
+      DeleteProject: {screen: DeleteProject},
+      Statistics: {screen: Statistics}
       },
       {
         headerMode: 'none',
