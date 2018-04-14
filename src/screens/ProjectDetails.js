@@ -3,6 +3,7 @@ import { Container, Header, Body, Title, Left, Button, Icon, Text, Right, Conten
 import ScreenHeader from '../components/ScreenHeader.js';
 import ProjectStorage from '../model/ProjectStorage.js';
 import TimeUtils from '../utils/TimeUtils.js';
+import DetailedActivityTab from '../components/DetailedActivityTab.js';
 
 export default class ProjectDetails extends React.Component {
     constructor(props) {
@@ -93,15 +94,17 @@ export default class ProjectDetails extends React.Component {
                     <View style={{alignSelf: "center", marginTop: 10, marginBottom: 10}}>
                         {timerActionButton}
                     </View>
-                    <View>
+                    <DetailedActivityTab activities={this.state.activities} />                    
                     
+                    {/* 
+                    <View>                        
                     <List>
                         <ListItem itemDivider>
                         <H3>History</H3>                            
                         </ListItem> 
                         {activitiesList}
-                    </List>
-                    </View>
+                    </List> </View>*/}
+                    
                 </Content>      
             </Container>
         );

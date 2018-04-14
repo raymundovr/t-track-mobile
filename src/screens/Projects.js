@@ -38,7 +38,7 @@ export default class Projects extends React.Component {
             <Container>
                 <Header>                
                     <Body>
-                        <Title>Projects</Title>
+                        <Title>Project Trackers</Title>
                     </Body>    
                 </Header>
                 <Content>

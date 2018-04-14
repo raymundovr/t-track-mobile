@@ -14,7 +14,7 @@ export default class ProjectsList extends React.Component {
                     <CardItem>
                         <Body>
                             <H3>{item.name}</H3>      
-                            <Text note>Minutes spent: {TimeUtils.formatElapsed(item.elapsed)}</Text>               
+                            <Text note>Spent: {TimeUtils.formatElapsed(item.elapsed)}</Text>               
                             <Text note>Started: {startDate.toDateString()}</Text> 
                             <View>
                                 <Button iconLeft transparent danger onPress={()=>{ this.props.navigate('DeleteProject', {project: item}) }}>
