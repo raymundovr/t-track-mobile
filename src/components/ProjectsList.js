@@ -11,10 +11,10 @@ export default class ProjectsList extends React.Component {
                 return (
                     <TouchableHighlight key={index} 
                     onPress={ () => this.props.navigate('ProjectDetails', { project: item, goBackKey: this.props.goBackKey })}>
-                    <CardItem>
+                    <CardItem>                        
                         <Body>
-                            <H3>{item.name}</H3>      
-                            <Text note>Spent: {TimeUtils.formatElapsed(item.elapsed)}</Text>               
+                            <H2>{item.name}</H2>      
+                            <Text>Spent: {TimeUtils.formatElapsed(item.elapsed)}</Text>               
                             <Text note>Started: {startDate.toDateString()}</Text> 
                             <View>
                                 <Button iconLeft transparent danger onPress={()=>{ this.props.navigate('DeleteProject', {project: item}) }}>

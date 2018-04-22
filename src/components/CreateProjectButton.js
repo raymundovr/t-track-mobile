@@ -4,9 +4,9 @@ import { Button, Text, Icon } from 'native-base';
 export default class CreateProjectButton extends React.Component {
     render() {
         return (
-            <Button full success onPress={ () => this.props.navigate('CreateProject')}>
-                <Icon name='add-circle' />
-                <Text>Create Project</Text>
+            <Button success onPress={ () => this.props.navigate('CreateProject')}>
+                <Icon style={{color: '#FFF'}} name='add-circle' />
+                <Text style={{color:'#FFF'}}>Create Project</Text>
             </Button>
         );
     }
