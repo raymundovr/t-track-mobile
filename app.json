@@ -3,7 +3,7 @@
     "name": "T-Track",
     "description": "Find out how much time you actually spent.",
     "slug": "t-track",
-    "privacy": "unlisted",
+    "privacy": "pub",
     "sdkVersion": "26.0.0",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
